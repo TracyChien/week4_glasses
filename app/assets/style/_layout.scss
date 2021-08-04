@@ -1,0 +1,186 @@
+a{
+  color: #fff;
+  &:hover{
+    border-bottom: 2px solid #fff;
+    @include phone{
+      border-bottom: none;
+      background-color: #fff;
+      color: $primary-color;
+    }
+  }
+}
+.header{
+  padding: 30px 56px 30px 88px;
+  background-color: $primary-color;
+  @include pad{
+    padding: 30px 19px 30px 39px;
+  }
+  @include phone{
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    a:hover{
+      border-bottom: none;
+      background-color:$primary-color;
+    }
+    @include phone{
+      padding: 10px 0;
+    }
+  }
+  .menu{
+    @include phone{
+      width: 100%;
+      flex-wrap: wrap;
+      text-align: center;
+      border: none;
+    }
+    .menuItem{
+      @include phone{
+        width: 50%;
+        border: 1px solid #fff;
+      }
+      a{
+        display: block;
+        font-size: 20px;
+        margin-left: $space-8*4;
+        margin-right: $space-8*4;
+        padding-bottom: 10px;
+        @include pad{
+          margin-left: $space-10;
+          margin-right: $space-10;
+        }
+        @include phone{
+          margin-left: 0;
+          margin-right: 0;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  background-color: $primary-color;
+  padding-top: $space-8*4;
+  padding-bottom: $space-10*4;
+  @include phone{
+    padding-top: 25px;
+    padding-bottom: $space-8*2;
+  }
+  .content{
+    border-bottom: 1px solid #FFF;
+    @include phone{
+      flex-direction: row-reverse;
+    }
+    .menu{
+      @include phone{
+        display: none;
+      }
+      .menuItem{
+        margin-right: $space-8*6;
+        @include pad{
+          margin-right: $space-10*4;
+        }
+      }
+      a{
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    }
+    .social{
+      @include phone{
+        width: 30%;
+      }
+      .socialItem{
+        margin-left: $space-8*4;
+        a:hover{
+          border-bottom: none;
+        }
+        @include pad{
+          margin-left: $space-8*3;
+        }
+      }
+    }
+  }
+  .contact{
+    padding-top: $space-8*3;
+    padding-bottom: $space-8*2;
+    width: 100%;
+    @include pad{
+      padding-bottom: $space-8;
+    }
+    @include phone{
+      padding-top: 0;
+      padding-bottom: 18px;
+      width: 70%;
+    }
+    li{
+      margin-bottom: $space-8*2;
+      font-size: 36px;
+      vertical-align: middle;
+      @include pad{
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      @include phone{
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+      img{
+        width: 48px;
+        height: 48px;
+        margin-right: $space-8*2;
+        @include pad {
+          width: 24px;
+          height: 24px;
+          margin-right: $space-8;
+        }
+        @include phone{
+          width: 15px;
+          height: 15px;
+          margin-right: 6px;
+        }
+      }
+      a{
+        font-size: 36px;
+        @include pad{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .bottom{
+    margin-top: $space-8*4;
+    @include pad{
+      margin-top: $space-8*3;
+      font-size: 14px;
+    }
+    @include phone{
+      margin-top: $space-8*2;
+      display: block;
+    }
+    .copyright{
+      color: #fff;
+      @include phone{
+        margin-bottom: $space-8;
+      }
+    }
+    .policy{
+      @include phone{
+        display: block;
+      }
+      li{
+        margin-left: $space-8*6;
+        @include pad{
+          margin-left: $space-8*3;
+        }
+        @include phone{
+          margin-left: 0;
+          margin-bottom: $space-8;
+        }
+      }
+    }
+  }
+}

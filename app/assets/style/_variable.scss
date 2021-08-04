@@ -1,0 +1,23 @@
+//color
+$primary-color: #AA0601;
+$secondary-color: #FBF2F2;
+$text-primary-color: #650300;
+
+// spacing
+$space-1: 8px;
+$space-2:10px;
+$space-8: 8px;
+$space-10:10px;
+
+// mixin
+@mixin pad {
+  @media (max-width:992px){
+      @content
+  }
+};
+
+@mixin phone {
+  @media (max-width:767px){
+      @content
+  }
+};

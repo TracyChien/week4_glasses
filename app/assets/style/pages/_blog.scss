@@ -1,0 +1,161 @@
+.blogListHeader{
+  background-color: $text-primary-color;
+  @include phone{
+    display: none;
+  }
+
+  .blogMenu{
+    padding: 12px 0;
+    @include pad{
+      padding: 16px 0;
+    }
+
+    a{
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 48px;
+      @include pad{
+        font-size: 16px;
+        margin-right: 32px;
+      }
+    }
+  }
+}
+.blogList{
+  padding-top: 40px;
+  @include pad{
+    padding-top: 32px;
+  }
+  @include phone{
+    padding-top: 28px;
+  }
+
+  .postList{
+    margin-top: 60px;
+    @include pad{
+      margin-top: 40px;
+    }
+    @include phone{
+      margin-top: 28px;
+    }
+  }
+
+  .post{
+    margin-bottom: 60px;
+    @include pad{
+      margin-bottom: 24px;
+    }
+    @include phone{
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    &:last-child{
+      margin-bottom: 0px;
+    }
+
+    .photo{
+      width: 58%;
+      @include pad{
+        width: 50%;
+      }
+      @include phone{
+        width: 100%;
+      }
+
+      img{
+        width: 95%;
+        height: 100%;
+        object-fit: cover;
+        @include phone{
+          width: 100%;
+        }
+      }
+    }
+    .postContent{
+      width: 42%;
+      @include pad{
+        width: 50%;
+      }
+      @include phone{
+        width: 100%;
+      }
+
+      .postTitle{
+        font-size: 32px;
+        line-height: 63px;
+        color: $text-primary-color;
+        font-weight: 600;
+        @include pad{
+          font-size: 20px;
+          line-height: 1.5;
+        }
+        @include phone{
+          margin-top: 8px;
+          font-size: 16px;
+        }
+      }
+
+      .postSubtitle{
+        font-size: 20px;
+        margin-bottom: 26px;
+        font-weight: 600;
+        @include pad{
+          font-size: 16px;
+          line-height: 30px;
+          margin-bottom: 33px;
+        }
+        @include phone{
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 0px;
+        }
+
+        .date{
+          font-size: 16px;
+          font-weight: normal;
+          @include pad{
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .postDesc{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 14px;
+        @include pad{
+          font-size: 14px;
+        }
+        @include phone{
+          display: none;
+        }
+      }
+
+      .more{
+        text-align: right;
+        display: block;
+        font-size: 36px;
+        color: $text-primary-color;
+        @include pad{
+          display: inline;
+          font-size: 14px;
+          color: #555555
+        }
+      }
+    }
+  }
+}
+.blogPages{
+  margin-top: 96px;
+  margin-bottom: 160px;
+  @include pad{
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+  @include phone{
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+}

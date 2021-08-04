@@ -1,0 +1,278 @@
+.tag{
+  font-size: 24px;
+  color:#AA0601;
+  font-weight: 600;
+  &:hover{
+    background-color: #AA0601;
+    color: #fff;
+  }
+  @include pad{
+    font-size: 16px;
+  }
+  @include phone{
+    font-size: 14px;
+  }
+}
+.blogContentHeader{
+  background-color: $text-primary-color;
+  >.wrap{
+    justify-content: center;
+  }
+  .blogMenu{
+    padding: 12px 0;
+    @include pad{
+      padding: 16px 0;
+    }
+
+    a{
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 48px;
+      @include pad{
+        font-size: 16px;
+        margin-right: 32px;
+      }
+      @include phone{
+        margin-right: 24px;
+      }
+    }
+  }
+  .search{
+    @include phone{
+      display: none;
+    }
+  }
+}
+.breadcrumbs{
+  margin-top: $space-8;
+  margin-bottom: $space-8;
+  ol{
+    li{
+      &:not(:last-child):after{
+        padding: 0 8px;
+        content: '/';
+      }
+      a{
+        color: #000;
+        @include pad{
+          font-size: 14px;
+        }
+
+        &.active{
+          color: #AA0601;
+        }
+      }
+    }
+  }
+}
+.hashtag{
+  .tag{
+    margin-right: 16px;
+    @include pad{
+      margin-right: 8px;
+    }
+    @include phone{
+      margin-right: 4px;
+    }
+  }
+}
+.blogContainer{
+  padding-bottom: 160px;
+  @include pad{
+    padding-bottom: 96px;
+  }
+  @include phone{
+    flex-direction: column;
+    padding-bottom: 56px;
+  }
+}
+.blogContent{
+  width: 68%;
+  margin-right: 30px;
+  @include phone{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .blogTitle{
+    font-size: 48px;
+    line-height: 95px;
+    margin-bottom: $space-8;
+    @include pad{
+      font-size: 32px;
+      line-height: 46px;
+      margin-bottom: 4px;
+    }
+    @include phone{
+      font-size: 20px;
+      line-height: 1.5;
+      color: #650300;
+    }
+  }
+  .blogSubtitle{
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    @include pad{
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 25px;
+    }
+    @include phone{
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .date{
+      font-size: 16px;
+      line-height: 24px;
+      color: #6C6C6C;
+      @include pad{
+        font-size: 14px;
+      }
+    }
+  }
+  .contentItem{
+    margin-bottom: 40px;
+    @include pad{
+      margin-bottom: 24px;
+    }
+    &:last-child{
+      margin-bottom: 48px;
+      @include pad{
+        margin-bottom: 28px;
+      }
+      @include phone{
+        margin-bottom: 20px;
+      }
+    }
+    .pic{
+      margin-bottom: 24px;
+      @include pad{
+        margin-bottom: 16px;
+      }
+    }
+    .desc{
+      font-size: 20px;
+      color: #0A0A0A;
+      @include pad{
+        font-size: 16px;
+      }
+    }
+  }
+  .shareList{
+    margin-bottom: 20px;
+    @include phone{
+      margin-bottom: 16px;
+    }
+
+    p{
+      font-size: 20px;
+      font-weight: 600;
+      margin-right: 20px;
+      @include pad{
+        font-size: 16px;
+        line-height: 30px;
+        margin-right: 16px;
+      }
+    }
+    .shareItem{
+      margin-right: 16px;
+    }
+  }
+  .otherPages{
+    padding-top: 24px;
+    border-top: 1px solid #000;
+    @include pad{
+      padding-top: 16px;
+    }
+    @include phone{
+      flex-direction: column;
+      padding-top: 10px;
+    }
+
+    .pageItem{
+      font-size: 19px;
+      line-height: 30px;
+      color: #000;
+      @include pad{
+        font-size: 16px;
+      }
+      @include phone{
+        font-size: 14px;
+      }
+      &:last-child{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        @include phone{
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+      }
+
+      img{
+        margin-left: 12px;
+        @include pad{
+          margin-left: 8px;
+        }
+        @include phone{
+          margin-left: 0px;
+          margin-right: 4px;
+        }
+
+      }
+      .rotated{
+        transform: rotate(180deg);
+        margin-right: 12px;
+        margin-left: 0;
+        @include pad{
+          margin-right: 8px;
+        }
+        @include phone{
+          margin-right: 4px;
+        }
+      }
+      &:hover{
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}
+.tags{
+  width: 30%;
+  @include phone{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .tagTitle{
+    font-size: 28px;
+    line-height: 42px;
+    color: #AA0601;
+    font-weight: 600;
+    @include pad{
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    img{
+      margin-right: 12px;
+      @include pad{
+        width: 24px;
+        margin-right: 2px;
+      }
+    }
+  }
+  .tagList{
+    margin-top: 5px;
+    @include pad{
+      margin-top: 8px;
+    }
+    .tag{
+      margin: 4px 24px 4px 0;
+      @include pad{
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+}

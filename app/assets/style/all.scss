@@ -1,23 +1,16 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+// font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap');
+//all
+@import 'reset';
+@import 'variable';
+@import 'common';
+@import 'layout';
+@import 'utils';
+// page
+@import 'pages/index';
+@import 'pages/faq';
+@import 'pages/blog';
+@import 'pages/blog-content';
+@import 'pages/product';
+@import 'pages/location';

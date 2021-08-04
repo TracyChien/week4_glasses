@@ -1,0 +1,166 @@
+.selectLayout{
+  margin-top: 65px;
+  font-size: 24px;
+  font-weight: 600;
+  @include pad{
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  @include phone{
+    margin-top: 24px;
+    font-size: 14px;
+  }
+
+  label{
+    margin-right: 20px;
+    @include phone{
+      margin-right: 12px;
+    }
+  }
+  select{
+    width: 324px;
+    padding: 8px 19px;
+    font-size: 18px;
+    color: #495057;
+    @include pad{
+      width: 237px;
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+    @include phone{
+      width: 70%;
+      font-size: 14px;
+      padding: 7px 16px;
+    }
+  }
+}
+.locCard{
+  margin-top: 32px;
+  @include pad{
+    margin-top: 24px;
+  }
+  @include phone{
+    margin-top: 20px;
+  }
+  &.locCard-sm{
+    width: 350px;
+    @include pad{
+      width: 47%;
+    }
+    @include phone{
+      width: 100%;
+    }
+  }
+
+  .locPic{
+    height: 224px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    @include pad{
+      height: 164px;
+    }
+  }
+  .locName{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 1px solid #00000020;
+    @include pad{
+      font-size: 16px;
+      padding: 8px 24px;
+    }
+  }
+  .locInfo{
+    border: 1px solid #00000020;
+    padding:16px 24px;
+  }
+  .locInfoItem{
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    a{
+      display: inline-block;
+      width: 100%;
+      font-size: 20px;
+      color: #212529;
+      @include pad{
+        font-size: 14px;
+      }
+
+      img{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        vertical-align: top;
+        @include pad{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      span{
+        width: 89%;
+      }
+      &:hover{
+        border-bottom: none;
+      }
+    }
+  }
+  .blackBtn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    font-size: 19px;
+    @include pad{
+      padding: 16px 0;
+      font-size: 14px;
+    }
+    &:hover{
+      border-bottom: none;
+      color: #fff;
+      background-color: rgb(92, 92, 92);
+    }
+  }
+  &.locCard-m{
+    width: 445px;
+    @include pad{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .locPic{
+        width: 47%;
+      }
+      .locContent{
+        width: 47%;
+      }
+    }
+    @include phone{
+      flex-direction: column;
+      width: 100%;
+      .locPic{
+        width: 100%;
+      }
+      .locContent{
+        width: 100%;
+      }
+    }
+  }
+}
+.locMap{
+  margin-top: 32px;
+  @include pad{
+    width: 100%;
+  }
+  @include phone{
+    margin-top: 20px;
+  }
+  iframe{
+    height: 422px;
+    @include pad{
+      width: 100%;
+    }
+  }
+}

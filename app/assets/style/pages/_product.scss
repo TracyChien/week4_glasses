@@ -1,0 +1,180 @@
+// product type
+.productTypeList{
+  .typeItem{
+    a{
+      display: block;
+      width: 370px;
+      padding-top: 27px;
+      padding-bottom: 26px;
+      color: #000;
+      font-size: 32px;
+      text-align: center;
+      border-left: 1px solid #DCDCDC;
+      @include pad{
+        width: 230px;
+        padding: 14px 0;
+        font-size: 24px;
+      }
+      @include phone{
+        width: 115px;
+        font-size: 14px;
+        padding: 6px 0;
+      }
+
+      &.active{
+        border-bottom: 8px solid #AA0601 ;
+        @include phone{
+          border-width: 4px;
+        }
+      }
+      &:hover{
+        background-color: rgb(216, 212, 212);
+      }
+      &:last-child{
+        border-right: 1px solid #DCDCDC;
+      }
+
+      img{
+        width: 44px;
+        height: 44px;
+        margin-right: 8px;
+        @include pad{
+          width: 32px;
+          height: 32px;
+        }
+        @include phone{
+          width: 15px;
+          height: 15px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+.productBanner{
+  img{
+    width: 50%;
+  }
+}
+
+// product content
+.productContent{
+  padding-top: 80px;
+  padding-bottom: 160px;
+  @include pad{
+    padding-top: 56px;
+    padding-bottom: 96px;
+  }
+  @include phone{
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+
+  .productTitle{
+    font-size: 42px;
+    text-align: center;
+    @include pad{
+      font-size: 32px;
+    }
+    @include phone{
+      font-size: 20px;
+    }
+  }
+
+  .productSubtitle{
+    font-size: 32px;
+    text-align: center;
+    @include pad{
+      font-size: 24px;
+    }
+    @include phone{
+      font-size: 16px;
+    }
+  }
+}
+
+.productList{
+  margin-bottom: 56px;
+  @include pad{
+    margin-bottom: 32px;
+  }
+  @include phone{
+    margin-bottom: 24px;
+  }
+
+  .productItem{
+    margin: 40px 0;
+    @include pad{
+      margin: 32px 0;
+    }
+    @include phone{
+      margin: 16px 0;
+    }
+
+    &.productCard-sm{
+      width: 255px;
+      @include pad{
+        width: 45%;
+      }
+      @include phone{
+        width: 100%;
+      }
+
+      .productPhoto{
+        img{
+          width: 100%;
+          height: 164px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &.productCard-m{
+      width: 350px;
+      @include pad{
+        width: 45%;
+      }
+      @include phone{
+        width: 100%;
+      }
+
+      .productPhoto{
+        img{
+          width: 100%;
+          height: 224px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .productInfo{
+      font-size: 24px;
+      @include phone{
+        font-size: 16px;
+      }
+      .piece{
+        color: $primary-color;
+      }
+    }
+    .productColor{
+      .colorBox{
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        margin-right: 8px;
+        @include phone{
+          width: 16px;
+          height: 16px;
+        }
+
+        &.dark{
+          background-color: #5F3E2D;
+        }
+        &.light{
+          background-color: #B75929;
+        }
+      }
+    }
+  }
+}
