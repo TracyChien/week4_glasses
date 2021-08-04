@@ -226,6 +226,9 @@ h1, h2, h3, h4, p, span, ul, li {
   -ms-flex-line-pack: center;
       align-content: center; }
 
+.mx-auto {
+  margin: 0 auto; }
+
 a {
   color: #fff; }
   a:hover {
@@ -253,7 +256,8 @@ a {
           -ms-flex-align: center;
               align-items: center; } }
   .header .logo a:hover {
-    border-bottom: none; }
+    border-bottom: none;
+    background-color: #AA0601; }
   @media (max-width: 767px) {
     .header .logo {
       padding: 10px 0; } }
@@ -413,6 +417,322 @@ a {
   .pagination a:hover {
     color: #fff;
     background-color: #000; }
+
+.banner {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: center center; }
+  @media (max-width: 992px) {
+    .banner {
+      height: 840px; } }
+  @media (max-width: 767px) {
+    .banner {
+      height: 394px; } }
+  .banner .titleGroup {
+    text-align: right;
+    color: #650300; }
+    .banner .titleGroup .subtitle {
+      font-size: 36px; }
+      @media (max-width: 992px) {
+        .banner .titleGroup .subtitle {
+          font-size: 20px; } }
+      @media (max-width: 767px) {
+        .banner .titleGroup .subtitle {
+          font-size: 16px; } }
+    .banner .titleGroup .title {
+      font-size: 64px;
+      font-weight: 600; }
+      @media (max-width: 992px) {
+        .banner .titleGroup .title {
+          font-size: 48px; } }
+      @media (max-width: 767px) {
+        .banner .titleGroup .title {
+          font-size: 32px; } }
+
+.h100 {
+  height: 100%; }
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .section {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .section {
+      padding-top: 32px;
+      padding-bottom: 40px; } }
+  .section .sectionTitle {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center; }
+    .section .sectionTitle.red {
+      color: #650300; }
+    .section .sectionTitle.white {
+      color: #fff; }
+    @media (max-width: 992px) {
+      .section .sectionTitle {
+        font-size: 32px; } }
+    @media (max-width: 767px) {
+      .section .sectionTitle {
+        font-size: 24px; } }
+
+.service {
+  background-color: #AA06010D; }
+  .service .serviceList {
+    margin-top: 40px; }
+    @media (max-width: 992px) {
+      .service .serviceList {
+        margin-top: 0px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    @media (max-width: 767px) {
+      .service .serviceList {
+        width: 255px;
+        margin: -12px auto 0 auto; } }
+  .service .serviceItem {
+    text-align: center;
+    width: 20%; }
+    @media (max-width: 992px) {
+      .service .serviceItem {
+        width: 45%;
+        margin-top: 32px; } }
+    @media (max-width: 767px) {
+      .service .serviceItem {
+        width: 100%; } }
+    .service .serviceItem img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px; }
+    .service .serviceItem .serviceTitle {
+      font-size: 24px;
+      font-weight: 600;
+      color: #650300;
+      margin-bottom: 8px; }
+    .service .serviceItem .serviceTxt {
+      font-size: 16px;
+      -moz-text-align-last: left;
+           text-align-last: left; }
+
+.classic .classicTypeList {
+  margin-top: 40px; }
+  @media (max-width: 992px) {
+    .classic .classicTypeList {
+      margin-top: 32px; } }
+  @media (max-width: 767px) {
+    .classic .classicTypeList {
+      margin-top: 20px; } }
+
+.classic .classicTypeItem {
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .classic .classicTypeItem {
+      margin-bottom: 8px; } }
+  @media (max-width: 767px) {
+    .classic .classicTypeItem {
+      position: relative; } }
+  .classic .classicTypeItem:last-child {
+    margin-bottom: 0; }
+  @media (max-width: 992px) {
+    .classic .classicTypeItem.flex-row-r {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  .classic .classicTypeItem .classicPhoto {
+    width: 635px;
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    @media (max-width: 992px) {
+      .classic .classicTypeItem .classicPhoto {
+        width: 50%;
+        height: 168px; } }
+    @media (max-width: 767px) {
+      .classic .classicTypeItem .classicPhoto {
+        width: 100%; } }
+  .classic .classicTypeItem .classicType {
+    margin: 0 30px; }
+    @media (max-width: 767px) {
+      .classic .classicTypeItem .classicType {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); } }
+    .classic .classicTypeItem .classicType .typeIcon {
+      width: 44px;
+      height: 44px;
+      margin-right: 8px; }
+      @media (max-width: 992px) {
+        .classic .classicTypeItem .classicType .typeIcon {
+          width: 40px;
+          height: 40px; } }
+    .classic .classicTypeItem .classicType .typeName {
+      font-size: 48px;
+      color: #AA0601; }
+      @media (max-width: 992px) {
+        .classic .classicTypeItem .classicType .typeName {
+          font-size: 28px; } }
+
+.crossover {
+  background-image: url("../images/bg.png");
+  background-position: center center; }
+  .crossover .crossoverList {
+    margin-top: 40px; }
+    @media (max-width: 992px) {
+      .crossover .crossoverList {
+        margin-top: 32px; } }
+    @media (max-width: 767px) {
+      .crossover .crossoverList {
+        margin-top: 20px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .crossover .crossoverItem {
+    width: 49%;
+    height: 455px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay; }
+    @media (max-width: 992px) {
+      .crossover .crossoverItem {
+        width: 45%;
+        height: 278px; } }
+    @media (max-width: 767px) {
+      .crossover .crossoverItem {
+        width: 100%;
+        height: 291px;
+        margin-bottom: 16px; }
+        .crossover .crossoverItem:last-child {
+          margin-bottom: 0; } }
+    .crossover .crossoverItem.doubleBG {
+      background-image: url("../images/product-8.png");
+      background-size: cover;
+      background-position: center center; }
+    .crossover .crossoverItem.youthBG {
+      background-image: url("../images/product-9.png");
+      background-size: cover;
+      background-position: center center; }
+    .crossover .crossoverItem .crossoverName {
+      font-size: 72px;
+      font-weight: 600;
+      color: #AA0601; }
+      @media (max-width: 992px) {
+        .crossover .crossoverItem .crossoverName {
+          font-size: 32px; } }
+
+.customer .customerList {
+  margin-top: 40px; }
+  @media (max-width: 992px) {
+    .customer .customerList {
+      margin-top: 0px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (max-width: 767px) {
+    .customer .customerList {
+      margin-top: 4px; } }
+
+.customer .customerItem {
+  width: 23.5%;
+  height: 460px;
+  -webkit-box-shadow: 0px 2px 6px #00000029;
+          box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px; }
+  @media (max-width: 992px) {
+    .customer .customerItem {
+      width: 47%;
+      margin-top: 32px; } }
+  @media (max-width: 767px) {
+    .customer .customerItem {
+      width: 100%;
+      margin-top: 16px; } }
+  .customer .customerItem .customerPhoto {
+    width: 100%;
+    height: 55%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4px 4px 0 0; }
+  .customer .customerItem .customerInfo {
+    padding: 16px;
+    height: 45%;
+    color: #212529; }
+    @media (max-width: 767px) {
+      .customer .customerItem .customerInfo {
+        padding: 16px 24px; } }
+    .customer .customerItem .customerInfo .customerName {
+      font-size: 14px;
+      margin-bottom: 8px; }
+    .customer .customerItem .customerInfo .buildDate {
+      font-size: 14px;
+      color: #707070; }
+
+.contact {
+  background-color: #AA06010D; }
+  .contact .contactForm {
+    width: 730px;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .contact .contactForm {
+        width: 450px; } }
+    @media (max-width: 767px) {
+      .contact .contactForm {
+        width: 100%; } }
+    .contact .contactForm .contactInfo {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      font-size: 20px; }
+      @media (max-width: 992px) {
+        .contact .contactForm .contactInfo {
+          margin-bottom: 16px;
+          font-size: 16px; } }
+      @media (max-width: 767px) {
+        .contact .contactForm .contactInfo {
+          margin-top: 20px;
+          margin-bottom: 8px; } }
+    .contact .contactForm .qns {
+      margin-bottom: 16px; }
+      @media (max-width: 992px) {
+        .contact .contactForm .qns {
+          margin-bottom: 8px; } }
+      .contact .contactForm .qns label {
+        display: block;
+        margin-bottom: 4px; }
+        @media (max-width: 992px) {
+          .contact .contactForm .qns label {
+            font-size: 14px; } }
+      .contact .contactForm .qns input[type="text"], .contact .contactForm .qns input[type="email"], .contact .contactForm .qns textarea {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+        background-color: #AA06010D;
+        border: 1px solid #000000; }
+        @media (max-width: 992px) {
+          .contact .contactForm .qns input[type="text"], .contact .contactForm .qns input[type="email"], .contact .contactForm .qns textarea {
+            font-size: 14px;
+            padding: 9px 12px; } }
+    .contact .contactForm .checkBox {
+      font-size: 14px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .contact .contactForm .submitBtn {
+      margin-top: 40px;
+      display: block;
+      width: 50%;
+      color: #fff;
+      background-color: #AA0601;
+      padding: 16px 0;
+      border: none;
+      text-align: center; }
+      @media (max-width: 992px) {
+        .contact .contactForm .submitBtn {
+          margin-top: 20px;
+          font-size: 14px;
+          padding: 10px 0; } }
 
 .faq .subtitle {
   font-size: 32px;
@@ -992,5 +1312,157 @@ a {
         background-color: #5F3E2D; }
       .productList .productItem .productColor .colorBox.light {
         background-color: #B75929; }
+
+.selectLayout {
+  margin-top: 65px;
+  font-size: 24px;
+  font-weight: 600; }
+  @media (max-width: 992px) {
+    .selectLayout {
+      margin-top: 40px;
+      font-size: 16px; } }
+  @media (max-width: 767px) {
+    .selectLayout {
+      margin-top: 24px;
+      font-size: 14px; } }
+  .selectLayout label {
+    margin-right: 20px; }
+    @media (max-width: 767px) {
+      .selectLayout label {
+        margin-right: 12px; } }
+  .selectLayout select {
+    width: 324px;
+    padding: 8px 19px;
+    font-size: 18px;
+    color: #495057; }
+    @media (max-width: 992px) {
+      .selectLayout select {
+        width: 237px;
+        font-size: 16px;
+        padding: 10px 16px; } }
+    @media (max-width: 767px) {
+      .selectLayout select {
+        width: 70%;
+        font-size: 14px;
+        padding: 7px 16px; } }
+
+.locCard {
+  margin-top: 32px; }
+  @media (max-width: 992px) {
+    .locCard {
+      margin-top: 24px; } }
+  @media (max-width: 767px) {
+    .locCard {
+      margin-top: 20px; } }
+  .locCard.locCard-sm {
+    width: 350px; }
+    @media (max-width: 992px) {
+      .locCard.locCard-sm {
+        width: 47%; } }
+    @media (max-width: 767px) {
+      .locCard.locCard-sm {
+        width: 100%; } }
+  .locCard .locPic {
+    height: 224px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center; }
+    @media (max-width: 992px) {
+      .locCard .locPic {
+        height: 164px; } }
+  .locCard .locName {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: 1px solid #00000020; }
+    @media (max-width: 992px) {
+      .locCard .locName {
+        font-size: 16px;
+        padding: 8px 24px; } }
+  .locCard .locInfo {
+    border: 1px solid #00000020;
+    padding: 16px 24px; }
+  .locCard .locInfoItem {
+    margin-bottom: 8px; }
+    .locCard .locInfoItem:last-child {
+      margin-bottom: 0; }
+    .locCard .locInfoItem a {
+      display: inline-block;
+      width: 100%;
+      font-size: 20px;
+      color: #212529; }
+      @media (max-width: 992px) {
+        .locCard .locInfoItem a {
+          font-size: 14px; } }
+      .locCard .locInfoItem a img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        vertical-align: top; }
+        @media (max-width: 992px) {
+          .locCard .locInfoItem a img {
+            width: 20px;
+            height: 20px; } }
+      .locCard .locInfoItem a span {
+        width: 89%; }
+      .locCard .locInfoItem a:hover {
+        border-bottom: none; }
+  .locCard .blackBtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    font-size: 19px; }
+    @media (max-width: 992px) {
+      .locCard .blackBtn {
+        padding: 16px 0;
+        font-size: 14px; } }
+    .locCard .blackBtn:hover {
+      border-bottom: none;
+      color: #fff;
+      background-color: #5c5c5c; }
+  .locCard.locCard-m {
+    width: 445px; }
+    @media (max-width: 992px) {
+      .locCard.locCard-m {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .locCard.locCard-m .locPic {
+          width: 47%; }
+        .locCard.locCard-m .locContent {
+          width: 47%; } }
+    @media (max-width: 767px) {
+      .locCard.locCard-m {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        .locCard.locCard-m .locPic {
+          width: 100%; }
+        .locCard.locCard-m .locContent {
+          width: 100%; } }
+
+.locMap {
+  margin-top: 32px; }
+  @media (max-width: 992px) {
+    .locMap {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .locMap {
+      margin-top: 20px; } }
+  .locMap iframe {
+    height: 422px; }
+    @media (max-width: 992px) {
+      .locMap iframe {
+        width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
